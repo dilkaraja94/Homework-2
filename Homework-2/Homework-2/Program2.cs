@@ -22,7 +22,7 @@ namespace FileCopy
             var fileSize = sourceFile.Length;
             var bytesPerMilliSecond = fileSize / totalMilliSeconds;
             var bytesPerSecond = bytesPerMilliSecond / 1000;
-            Console.WriteLine("Copied  {0} bytes in {1} MilliSecond at the rate of {2} bytes per second", fileSize, totalMilliSeconds, bytesPerSecond);
+            Console.WriteLine("Wrote {0} bytes in {1} MilliSecond at a rate of {2} bytes per second", fileSize, totalMilliSeconds, bytesPerSecond);
         }
 
         private static void CopyFile(FileInfo sourceFile, FileInfo destFile, int bufferSize)
